@@ -127,11 +127,10 @@ table {
   border-spacing: 0;
 }
 body {
-  max-width: 800px;
-  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2%;
-  background-color: #f2f3ee;
+  padding: 1.5%;
+  background-color: #F1F1F1;
 }
 body .section {
   display: flex;
@@ -145,14 +144,21 @@ body img {
 }
 body a {
   text-decoration: none;
+  color: #F6F7F8;
 }
 body .img-circle {
   border-radius: 50%;
+}
+body footer {
+  background-color: #454A59;
 }
 header {
   display: flex;
   justify-content: space-between;
   margin: 0.5em 0;
+  background-color: #23293B;
+  color: #F6F7F8;
+  height: 5em;
 }
 header h1 {
   font-size: 1.7rem;
@@ -173,6 +179,10 @@ header .header-left {
   justify-content: space-around;
   width: 35%;
 }
+header .header-left div {
+  display: flex;
+  margin: auto 0;
+}
 header img {
   width: initial;
   padding: 0 0.2rem;
@@ -185,24 +195,31 @@ footer nav {
 .section {
   height: 10%;
 }
+.section .right-div {
+  display: flex;
+  flex-direction: column;
+}
 .section div {
   height: 100%;
 }
-.section .img-left {
+.section div .img-left {
   height: 30%;
 }
-.section fig {
-  align-content: center;
-}
-.section .mid-div {
+.section div .mid-div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: auto;
 }
-.section .mid-div .img-center {
-  height: 100%;
+.section div .mid-div .img-center {
+  height: 90%;
 }
-.section .img-right {
+.section div .img-right {
   border-radius: 35%;
+}
+.section div .major-p {
+  color: #23293B;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 2em 0;
 }

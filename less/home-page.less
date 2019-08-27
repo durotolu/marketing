@@ -1,31 +1,39 @@
 .section {
     height: 10%;
 
-    div {
-        height: 100%;
-    }
-    
-    .img-left {
-        height: 30%;
-    }
-
-    fig {
-        align-content: center;
-    }
-
-    .mid-div {
+    .right-div {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: auto;
+    }
 
-        .img-center {
-            height: 100%;
+    div {
+        height: 100%;
+
+        .img-left {
+            height: 30%;
+        }
+    
+        .mid-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: auto;
+    
+            .img-center {
+                height: 90%;
+            }
+        }
+        
+        .img-right {
+            border-radius: 35%;
+        }
+
+        .major-p {
+            color: @nav-border;
+            font-weight: bold;
+            font-size: 2em;
+            padding: 2em 0;
         }
     }
     
-    
-    .img-right {
-        border-radius: 35%;
-    }
 }
