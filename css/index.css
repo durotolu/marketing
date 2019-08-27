@@ -194,6 +194,15 @@ footer nav {
 .section fig {
   align-content: center;
 }
-.section .img-center {
-  height: 80%;
+.section .mid-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+}
+.section .mid-div .img-center {
+  height: 100%;
+}
+.section .img-right {
+  border-radius: 35%;
 }
