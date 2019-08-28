@@ -11,32 +11,62 @@
 
     div {
         height: 100%;
+    }
 
-        .img-left {
-            height: 30%;
-        }
-    
-        .mid-div {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            height: auto;
-    
-            .img-center {
-                height: 100%;
-            }
-        }
-        
-        .img-right {
-            border-radius: 35%;
+    .img-left {
+        height: 30%;
+    }
+
+    .mid-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 42em;
+
+        .img-center {
+            height: 100%;
         }
 
-        .major-p {
-            color: @nav-border;
+        button {
+            height: 4em;
+            border-radius: 8%;
+            font-size: 1.5em;
             font-weight: bold;
-            font-size: 1.6em;
-            padding: 2em 0;
         }
     }
-    
+
+    .img-right {
+        border-radius: 35%;
+    }
+
+    table {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      table td, table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      table tr:nth-child(even){background-color: #f2f2f2;}
+      
+      table tr:hover {background-color: #ddd;}
+      
+      table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: grey;
+        color: white;
+      }
+
+    .major-p {
+        color: @nav-border;
+        font-weight: bold;
+        font-size: 1.6em;
+        padding: 2em 0;
+    }
+
 }

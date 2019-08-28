@@ -137,10 +137,12 @@ body .section {
 }
 body .section div {
   padding: 0 0.2em;
+  width: 100%;
 }
 body img {
   width: 100%;
   margin: 0.6em 0;
+  opacity: 0.4;
 }
 body a {
   text-decoration: none;
@@ -205,22 +207,51 @@ footer nav {
 .section div {
   height: 100%;
 }
-.section div .img-left {
+.section .img-left {
   height: 30%;
 }
-.section div .mid-div {
+.section .mid-div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: auto;
+  height: 42em;
 }
-.section div .mid-div .img-center {
+.section .mid-div .img-center {
   height: 100%;
 }
-.section div .img-right {
+.section .mid-div button {
+  height: 4em;
+  border-radius: 8%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.section .img-right {
   border-radius: 35%;
 }
-.section div .major-p {
+.section table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.section table td,
+.section table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.section table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.section table tr:hover {
+  background-color: #ddd;
+}
+.section table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: grey;
+  color: white;
+}
+.section .major-p {
   color: #23293B;
   font-weight: bold;
   font-size: 1.6em;
