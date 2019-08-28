@@ -126,38 +126,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
+.container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1.5%;
+  padding: 0 1.5%;
   background-color: #F1F1F1;
 }
-body .section {
+.container .section {
   display: flex;
 }
-body .section div {
+.container .section div {
   padding: 0 0.2em;
   width: 100%;
 }
-body img {
+.container img {
   width: 100%;
   margin: 0.6em 0;
   opacity: 0.4;
 }
-body a {
+.container a {
   text-decoration: none;
   color: #F6F7F8;
 }
-body .img-circle {
+.container .img-circle {
   border-radius: 50%;
 }
-body footer {
+.container footer {
   background-color: #454A59;
 }
 header {
   display: flex;
   justify-content: space-between;
-  margin: 0.5em 0;
   background-color: #23293B;
   color: #F6F7F8;
   height: 5em;
