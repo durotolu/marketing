@@ -194,10 +194,13 @@ footer nav {
 }
 .section {
   height: 10%;
+  padding-top: 1.5em;
 }
-.section .right-div {
+.section .left-div {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: auto;
 }
 .section div {
   height: 100%;
@@ -212,7 +215,7 @@ footer nav {
   height: auto;
 }
 .section div .mid-div .img-center {
-  height: 90%;
+  height: 100%;
 }
 .section div .img-right {
   border-radius: 35%;
@@ -220,6 +223,6 @@ footer nav {
 .section div .major-p {
   color: #23293B;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.6em;
   padding: 2em 0;
 }
