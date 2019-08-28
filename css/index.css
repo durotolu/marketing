@@ -140,6 +140,13 @@ body .container {
 body .container .section {
   display: flex;
 }
+body .container .section .section-2 {
+  display: flex;
+}
+body .container .section .section-2 div {
+  text-align: center;
+  text-justify: auto;
+}
 @media (max-width: 555px) {
   body .container .section {
     flex-direction: column;
@@ -279,6 +286,7 @@ footer nav {
   border-radius: 8%;
   font-size: 1.5em;
   font-weight: bold;
+  background-color: #64c4ed;
 }
 .section .img-right {
   border-radius: 35%;
