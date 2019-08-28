@@ -126,32 +126,33 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.container {
-  max-width: 1000px;
+body .container {
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 1.5%;
   background-color: #F1F1F1;
+  opacity: 0.9;
 }
-.container .section {
+body .container .section {
   display: flex;
 }
-.container .section div {
+body .container .section div {
   padding: 0 0.2em;
   width: 100%;
 }
-.container img {
+body .container img {
   width: 100%;
   margin: 0.6em 0;
   opacity: 0.4;
 }
-.container a {
+body .container a {
   text-decoration: none;
   color: #F6F7F8;
 }
-.container .img-circle {
+body .container .img-circle {
   border-radius: 50%;
 }
-.container footer {
+body .container footer {
   background-color: #454A59;
 }
 header {
@@ -160,6 +161,12 @@ header {
   background-color: #23293B;
   color: #F6F7F8;
   height: 5em;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    height: 7em;
+  }
 }
 header h1 {
   font-size: 1.7rem;
@@ -179,6 +186,11 @@ header .header-left {
   display: flex;
   justify-content: space-around;
   width: 35%;
+}
+@media (max-width: 800px) {
+  header .header-left {
+    width: 30em;
+  }
 }
 header .header-left div {
   display: flex;
@@ -203,6 +215,9 @@ footer nav {
   justify-content: space-between;
   height: auto;
 }
+.section .left-div .remove-tablet {
+  display: none;
+}
 .section div {
   height: 100%;
 }
@@ -213,7 +228,12 @@ footer nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 42em;
+  height: 40em;
+}
+@media (max-width: 800px) {
+  .section .mid-div {
+    height: 43em;
+  }
 }
 .section .mid-div .img-center {
   height: 100%;

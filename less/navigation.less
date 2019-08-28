@@ -5,6 +5,11 @@ header {
     color: @nav-font;
     height: 5em;
 
+    @media @tablet {
+        flex-direction: column;
+        height: 7em;
+    };
+
     h1 {
         font-size: 1.7rem;
         font-weight: bold;
@@ -27,6 +32,10 @@ header {
         display: flex;
         justify-content: space-around;
         width: 35%;
+
+        @media @tablet {
+            width: 30em;
+        }
 
         div {
             display: flex;

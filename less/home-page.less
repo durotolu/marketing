@@ -7,6 +7,10 @@
         flex-direction: column;
         justify-content: space-between;
         height: auto;
+
+        .remove-tablet {
+            display: none;
+        }
     }
 
     div {
@@ -21,10 +25,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 42em;
+        height: 40em;
+
+        @media @tablet {
+            height: 43em;
+        };
 
         .img-center {
             height: 100%;
+
         }
 
         button {
