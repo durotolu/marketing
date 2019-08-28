@@ -9,7 +9,9 @@
         height: auto;
 
         .remove-tablet {
-            display: none;
+            @media @tablet {
+                display: none;
+            } 
         }
     }
 
@@ -33,6 +35,10 @@
 
         .img-center {
             height: 100%;
+
+            @media @phone {
+                display: none;
+            };
 
         }
 
@@ -76,6 +82,7 @@
         font-weight: bold;
         font-size: 1.6em;
         padding: 2em 0;
+        font-family: 'Holtwood One SC';
     }
 
 }

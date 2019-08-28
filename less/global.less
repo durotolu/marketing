@@ -1,4 +1,6 @@
 body{
+    font-family: Sofia;
+    font-weight: bold;
 
     .container {
         max-width: 1100px;
@@ -10,9 +12,18 @@ body{
         .section {
             display: flex;
 
+            @media @phone {
+                flex-direction: column;
+            };
+
             div {
                 padding: 0 0.2em;
                 width: 100%;
+
+                @media @phone {
+                    width: inherit;
+                    height: 100%;
+                };
             }
         }
 
