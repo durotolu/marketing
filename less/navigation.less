@@ -5,7 +5,7 @@ header {
     color: @nav-font;
     height: 5em;
     position: fixed;
-    width: 100%;
+    .setPercent();
     top: 0;
 
     @media @tablet {
@@ -19,15 +19,14 @@ header {
 
     h1 {
         font-size: 1.7rem;
-        font-weight: bold;
+        #makeFontBold();
     }
 
     .header-right {
         display: flex;
 
         nav {
-            display: flex;
-            justify-content: space-around;
+            #makeSpaceAround();
 
             @media @phone {
                 flex-direction: column;
@@ -45,9 +44,8 @@ header {
     }
 
     .header-left {
-        display: flex;
-        justify-content: space-around;
-        width: 35%;
+        #makeSpaceAround();
+        .setPercent(35%);
 
         @media @tablet {
             width: 30em;

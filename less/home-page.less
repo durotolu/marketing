@@ -29,9 +29,8 @@
     }
 
     .mid-div {
-        display: flex;
+        #makeSpaceAround();
         flex-direction: column;
-        justify-content: space-around;
         height: 40em;
 
         @media @tablet {
@@ -51,7 +50,7 @@
             height: 4em;
             border-radius: 8%;
             font-size: 1.5em;
-            font-weight: bold;
+            #makeFontBold();
             background-color: #64c4ed;
         }
     }
@@ -63,7 +62,7 @@
     table {
         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
         border-collapse: collapse;
-        width: 100%;
+        .setPercent();
       }
       
       table td, table th {
@@ -85,7 +84,7 @@
 
     .major-p {
         color: @nav-border;
-        font-weight: bold;
+        #makeFontBold();
         font-size: 1.6em;
         padding: 2em 0;
         font-family: 'Holtwood One SC';
