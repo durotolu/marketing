@@ -145,7 +145,11 @@ body .container .section .section-2 {
 }
 body .container .section .section-2 div {
   text-align: center;
-  text-justify: auto;
+  margin: auto;
+}
+body .container .section .section-2 img {
+  opacity: unset;
+  border-radius: 50%;
 }
 @media (max-width: 555px) {
   body .container .section {
