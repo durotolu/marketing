@@ -147,6 +147,15 @@ body .container .section .section-2 div {
   text-align: center;
   margin: auto;
 }
+body .container .section .section-2 div p {
+  font-family: Metal Mania;
+  font-size: 1.3em;
+}
+body .container .section .section-2 div a {
+  color: initial;
+  font-family: sofia;
+  font-size: initial;
+}
 body .container .section .section-2 img {
   opacity: unset;
   border-radius: 50%;
@@ -154,6 +163,7 @@ body .container .section .section-2 img {
 @media (max-width: 555px) {
   body .container .section {
     flex-direction: column;
+    margin-top: 12em;
   }
 }
 body .container .section div {
@@ -197,6 +207,11 @@ header {
     height: 7em;
   }
 }
+@media (max-width: 555px) {
+  header {
+    height: 12em;
+  }
+}
 header h1 {
   font-size: 1.7rem;
   font-weight: bold;
@@ -207,6 +222,15 @@ header .header-right {
 header .header-right nav {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 555px) {
+  header .header-right nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  header .header-right nav a {
+    margin: 0.17em 0;
+  }
 }
 header .header-right .title {
   margin: 0.2em;
