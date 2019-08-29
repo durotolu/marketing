@@ -140,9 +140,6 @@ body .container {
 body .container .section {
   display: flex;
 }
-body .container .section .section-2 {
-  display: flex;
-}
 body .container .section .section-2 div {
   text-align: center;
   margin: auto;
