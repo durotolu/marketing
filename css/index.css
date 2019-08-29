@@ -127,11 +127,14 @@ table {
   border-spacing: 0;
 }
 body {
-  font-family: Sofia;
+  font-family: Alef;
   font-weight: bold;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 1600px 1500px;
 }
 body .container {
-  max-width: 1100px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 1.5%;
   background-color: #F1F1F1;
@@ -200,6 +203,14 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
+}
+header .max {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 @media (max-width: 800px) {
   header {
